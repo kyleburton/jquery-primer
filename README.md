@@ -44,9 +44,17 @@ What is CSS?   Cascading Style Sheets is what the acronym stands for, but what i
 
 So, how does CSS work?  CSS files have a simple structure, they specify a selector and a styling block.  The selector determines which elements the styling is applied to.  The selectors and styling are also cascading - when an element is matched by more than one selector, it takes on all the styling attributes from the related CSS blocks, with conflicting attirbutes being overriden by the last one specified.
 
-The best way I've come up with to think about CSS selectors is that CSS sees the DOM as a 'paint by numbers' canvas, with each HTML tag being a region and the selectors being used to identify the region.
+The best way I've come up with to think about CSS selectors is that CSS sees the DOM as a 'paint by numbers' canvas.
 
-<img src="images/css/paint-by-numbers.png" />
+<img src="images/css/by-numbers-480x360.png" />
+
+Only instead of numbers, styleable sections can be identified by their tag:
+
+<img src="images/css/by-numbers-tagged-480x360.png" />
+
+They can be identified by an 'id' or 'class' attribute.  Ids and class attributes are very useful, so we'll talk some more about them.
+
+<img src="images/css/by-numbers-classes-and-ids-480x360.png" />
 
 
 
