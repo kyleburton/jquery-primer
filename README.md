@@ -58,7 +58,7 @@ Only instead of numbers, styleable sections can be identified by their tag:
 
 A tag may have a single ID, and an ID should be used only once within an HTML document.  It is intended to uniquely identify ('ID', get it?) a single element in the page.
 
-Tags may have multiple classes and classes can be used (and should be, that's what they're for) across many tags.
+Tags may have multiple classes and classes can be used (and should be, that's what they're for) across many tags.  CSS uses a hash (#) as a prefix for differentiating identifiers from classes, for which it uses a dot (.).  These two characters separate IDs and classes from the other HTML tags.
 
 <img src="images/css/by-numbers-classes-and-ids-480x360.png" />
 
@@ -66,21 +66,16 @@ So, back to the tree.  The branches in the tree all represent different HTML tag
 
 <img src="images/trees/html-annotated-tree.png" />
 
-This is the environment in which yoru JavaScript executes.  It gets access to this tree starting at the trunk or root of the tree via the <code>document</code> variable.  The DOM API here is complex, and there are several libraries for mamking interacting with this tree, finding and modifying the content significantly simpler.  The one I have the most experience with is jQuery.
+This is the environment in which your JavaScript executes.  It gets access to this tree starting at the trunk or root of the tree via the <code>document</code> variable.  The DOM API for doing this by hand is complex.  Thankfully there are several libraries for mamking interacting with the DOM, finding and modifying the content, significantly simpler.  The one I have the most experience with and will be discussing is jQuery.
 
 <img src="images/trees/monkey-on-tree.png" />
 
-
-In each region you can put a class (like a number), then separetly you deifne the 'key' or table which describes how to paint each of those regions.
+In each region you can put a class (like a number), then separetly you define the 'key' or table which describes how to paint each of those regions.
 
 (show a picture of a DOM/Grid with the numbers, then a slide of a css definition / key / table, then the blank grid filled in with some of the style).
 
-This the simplest analogy I could come up with.
-
-Now CSS also supports IDs.  You use classes when there is more than 1 region (element) that you want that style to apply to.  You use an ID when it is supposed to be unique.  This distinction between classes and IDs will become more important when you start making your application interactive.  I'll touch on it a bit later.
 
 h2. jQuery and JavaScript
-
 
 h3. Navigation
 
